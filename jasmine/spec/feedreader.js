@@ -74,7 +74,7 @@ $(function() {
 
         // use jQuery .trigger() method
         it('changes visibility when the menu icon is clicked', function(){
-            $trigger = $('.icon-list');
+            var $trigger = $('.icon-list');
             // #click first time toggleClass
             $trigger.trigger('click');
             expect($('body').hasClass('menu-hidden')).toBe(false);
@@ -86,7 +86,7 @@ $(function() {
 
 
     /* TODO: Write a new test suite named "Initial Entries" */
-    describe('Initial Entries', function(){});
+    describe('Initial Entries', function(){
 
         /* TODO: Write a test that ensures when the loadFeed
          * function is called and completes its work, there is at least
@@ -95,6 +95,20 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
 
+        // requirement seems to suggest initial load, so will test on first feed
+        var id = 0;
+
+        beforeEach(function(done){
+            loadFeed(id, function(){
+                done();
+            });
+        });
+
+        it('has at least one entry in the feed container', function(done){
+            expect($('.feed').children().length).toBeGreaterThan(0);
+            done();
+        });
+    });
     /* TODO: Write a new test suite named "New Feed Selection"
 
         /* TODO: Write a test that ensures when a new feed is loaded
