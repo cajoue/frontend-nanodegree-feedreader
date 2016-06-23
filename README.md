@@ -34,4 +34,16 @@ to run on port 8080
 
 ## Helpful resources
 ### Jasmine
+[Jasmine](http://jasmine.github.io/2.2/introduction.html)
+
 ### Forum
+
+### jQuery
+[.hasClass()](http://api.jquery.com/hasClass/)
+
+[Triggering Event Handlers](https://learn.jquery.com/events/triggering-event-handlers/)
+
+[.trigger()](http://api.jquery.com/trigger/)
+
+### Other
+[Testing a simple toggle class show and hide with Jasmine](https://gist.github.com/davilious/9503539)
