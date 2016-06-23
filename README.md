@@ -22,22 +22,17 @@ To write a complete test suite using Jasmine to ensure the following:
 
 ## Project Setup & Installation
 ### Get the git
-
- - Fork, clone or download the project here on github. Use git to clone
-   the repository to your local system 
- - open terminal 
- - Navigate to the parent directory in which you intend to install
-   the project
- - `$ git clone https://github.com/cajoue/frontend-nanodegree-feedreader.git`
+- Fork, clone or download the project here on github. Use git to clone the repository to your local system 
+- open terminal 
+- Navigate to the parent directory in which you intend to install the project
+- `$ git clone https://github.com/cajoue/frontend-nanodegree-feedreader.git`
 
 This will create, and install files to, the project directory **frontend-nanodegree-feedreader** 
 
 ### Run on local Server
 - open terminal
 - Navigate to the root of the project directory 
-- `$ python -m SimpleHTTPServer 8080 `
-to run on port 8080 
-
+- `$ python -m SimpleHTTPServer 8080 ` to run on port 8080 
 - open browser (http://localhost:8080/)
 - **index.html** should load automatically
 
@@ -77,6 +72,7 @@ Callback functions make use of Jasmine's beforeEach and asynchronous done() func
 
 ### Forum
 [New Feed Selection test](https://discussions.udacity.com/t/new-feed-selection-test/15741)
+
 ### jQuery
 [.hasClass()](http://api.jquery.com/hasClass/)
 
