@@ -6,12 +6,19 @@ In this project I was given a web-based application that reads RSS feeds. The or
 
 ## Project Objectives
 To write a complete test suite using Jasmine to ensure the following:
+
 [x] each feed in the allFeeds object has a URL defined and the URL is not empty
+
 [x] each feed in the allFeeds object has a name defined and the name is not empty
+
 [x] the menu element is hidden by default 
+
 [x] the menu changes visibility when the menu icon is clicked. This test has two expectations: does the menu display when clicked and does it hide when clicked again
+
 [x] when the loadFeed function is called and completes its work, there is at least a single .entry element within the .feed container 
+
 [x] when a new feed is loaded by the loadFeed function the content changes
+
 
 ## Project Setup & Installation
 ### Get the git
@@ -42,6 +49,7 @@ Jasmine reports successful and failed tests at the bottom of the page.
 - Red crosses are failed tests
 
 Successes are reported in Green text
+
 Fails are reported in Red text
 
 ### The Tests
@@ -55,6 +63,7 @@ Fails are reported in Red text
 
 ### Callbacks
 loadFeed() is asynchronous 
+
 Callback functions make use of Jasmine's beforeEach and asynchronous done() function to ensure that the asynchronous feeds are loaded before they are tested.
 
 ##Technologies Used
