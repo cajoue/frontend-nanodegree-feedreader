@@ -75,9 +75,9 @@ Callback functions make use of Jasmine's beforeEach and asynchronous done() func
 
 [.trigger()](http://api.jquery.com/trigger/)
 
-[.children()](https://api.jquery.com/children/)
-
 [.first()](https://api.jquery.com/first/)
 
 ### Other
 [Testing a simple toggle class show and hide with Jasmine](https://gist.github.com/davilious/9503539)
+
+My reviewer :)

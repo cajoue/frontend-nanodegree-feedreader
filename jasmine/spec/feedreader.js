@@ -35,7 +35,7 @@ $(function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].url).toBeDefined();
                 expect(allFeeds[i].url.length).not.toBe(0);
-            };
+            }
         });
 
 
@@ -47,7 +47,7 @@ $(function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].name).toBeDefined();
                 expect(allFeeds[i].name.length).not.toBe(0);
-            };
+            }
         });
     });
 
@@ -96,17 +96,17 @@ $(function() {
          */
 
         // requirement seems to suggest initial load, so will test on first feed
-        var id = 0;
-
+        // Reviewer's Tip:
+        // Since there's no code inside loadFeed()'s anonymous callback function, this piece of code can be simplified
         beforeEach(function(done){
-            loadFeed(id, function(){
-                done();
-            });
+            loadFeed(0, done);
         });
 
-        it('has at least one entry in the feed container', function(done){
-            expect($('.feed').children().length).toBeGreaterThan(0);
-            done();
+        // Review: change .children() method as it is too generic
+        // Reviewer Tip:
+        // There's no asynchronous tasks in this it block. Using done is redundant.
+        it('has at least one entry in the feed container', function(){
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
     });
 
