@@ -109,10 +109,34 @@ $(function() {
             done();
         });
     });
+
     /* TODO: Write a new test suite named "New Feed Selection" */
-    describe('New Feed Selection', function(){});
+    describe('New Feed Selection', function(){
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
+        // compare contents of first item of two different feeds
+        var firstFeed,
+            nextFeed;
+
+        beforeEach(function(done){
+            loadFeed(0, function(){
+                firstFeed = $('.entry-link').first().html();
+                done();
+            });
+        });
+
+        // run expect() inside loadFeed() scope and make comparison before calling done().
+        // If expect() is outside this scope nextFeed will be undefined.
+        it('changes the content in the feed container', function(done){
+            loadFeed(1, function(){
+                nextFeed = $('.entry-link').first().html();
+                expect(firstFeed).not.toEqual(nextFeed);
+                done();
+            });
+        });
+    });
+
 }());

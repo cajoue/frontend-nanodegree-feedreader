@@ -37,7 +37,7 @@ to run on port 8080
 [Jasmine](http://jasmine.github.io/2.2/introduction.html)
 
 ### Forum
-
+[New Feed Selection test](https://discussions.udacity.com/t/new-feed-selection-test/15741)
 ### jQuery
 [.hasClass()](http://api.jquery.com/hasClass/)
 
@@ -46,6 +46,8 @@ to run on port 8080
 [.trigger()](http://api.jquery.com/trigger/)
 
 [.children()](https://api.jquery.com/children/)
+
+[.first()](https://api.jquery.com/first/)
 
 ### Other
 [Testing a simple toggle class show and hide with Jasmine](https://gist.github.com/davilious/9503539)
